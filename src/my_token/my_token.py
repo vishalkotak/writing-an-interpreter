@@ -1,8 +1,9 @@
 from enum import Enum
 
+
 class TokenType(Enum):
-    ILLEGAL = "ILLEGAL" # Signifies a token/character we don't know.
-    EOF = "EOF" # End of file.
+    ILLEGAL = "ILLEGAL"  # Signifies a token/character we don't know.
+    EOF = "EOF"  # End of file.
 
     # Identifiers
     IDENT = "IDENT"
@@ -26,6 +27,5 @@ class TokenType(Enum):
 
 
 class Token:
-    type: TokenType # could have been an int/byte for better performance.
+    type: TokenType  # could have been an int/byte for better performance.
     literal: str
-

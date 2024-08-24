@@ -1,4 +1,3 @@
-
 class Lexer:
 
     def __init__(self, input: str):
@@ -14,4 +13,3 @@ class Lexer:
             self.ch = input[self.read_position]
         self.position = self.read_position
         self.read_position += 1
-            
