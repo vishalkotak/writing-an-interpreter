@@ -27,5 +27,6 @@ class TokenType(Enum):
 
 
 class Token:
-    type: TokenType  # could have been an int/byte for better performance.
-    literal: str
+    def __init__(self, type: TokenType, literal: str):
+        self.type = type  # could have been an int/byte for better performance.
+        self.literal = literal
