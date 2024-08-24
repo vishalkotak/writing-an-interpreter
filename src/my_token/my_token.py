@@ -26,6 +26,6 @@ class TokenType(Enum):
 
 
 class Token:
-    type: str # could have been an int/byte for better performance.
+    type: TokenType # could have been an int/byte for better performance.
     literal: str
 
