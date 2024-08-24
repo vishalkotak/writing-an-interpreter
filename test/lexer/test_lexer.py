@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+import logging
+
 from src.lexer.lexer import Lexer
 from src.my_token.my_token import TokenType
-
-import logging
 
 
 def test_next_token():

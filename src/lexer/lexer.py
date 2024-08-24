@@ -1,6 +1,6 @@
-from my_token.my_token import Token, TokenType
-
 import logging
+
+from my_token.my_token import Token, TokenType
 
 
 class Lexer:
