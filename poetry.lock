@@ -71,6 +71,25 @@ python-versions = ">=3.8.0"
 colors = ["colorama (>=0.4.6)"]
 
 [[package]]
+name = "mypy"
+version = "1.11.1"
+description = "Optional static typing for Python"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+mypy-extensions = ">=1.0.0"
+tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
+typing-extensions = ">=4.6.0"
+
+[package.extras]
+dmypy = ["psutil (>=4.0)"]
+install-types = ["pip"]
+mypyc = ["setuptools (>=50)"]
+reports = ["lxml"]
+
+[[package]]
 name = "mypy-extensions"
 version = "1.0.0"
 description = "Type system extensions for programs checked with the mypy type checker."
@@ -157,7 +176,7 @@ python-versions = ">=3.8"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c51e0916982bb7f7c305673a36dc8b403baf4355a1ae07a717fad309bfb70a08"
+content-hash = "311727663c5fc4bb282b1c18923c2bd745c6a3b7a721d7dde81a56db5a5c5905"
 
 [metadata.files]
 black = []
@@ -166,6 +185,7 @@ colorama = []
 exceptiongroup = []
 iniconfig = []
 isort = []
+mypy = []
 mypy-extensions = []
 packaging = []
 pathspec = []
