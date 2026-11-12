@@ -8,8 +8,8 @@ authors = ["Vishal Kotak <vishal.sanjiv.kotak@gmail.com>"]
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.3.2"
-black = "^24.8.0"
+pytest = "^9.0.0"
+black = "^26.0.0"
 isort = "^5.13.2"
 mypy = "^1.11.1"
 
